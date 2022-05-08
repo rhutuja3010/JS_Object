@@ -1,16 +1,23 @@
-// Q37.Write a Python program to create a dictionary of keys x, y, and z where each key has as
-// value a list from 11-20, 21-30, and 31-40 respectively. Access the fifth value of each key from
-// the dictionary.
-// {'x': [11, 12, 13, 14, 15, 16, 17, 18, 19],
-// 'y': [21, 22, 23, 24, 25, 26, 27, 28, 29],
-// 'z': [31, 32, 33, 34, 35, 36, 37, 38, 39]}
-// 15
-// 25
-// 35
+// Q37. Consider an array/list of sheep where some sheep may be missing from their place. We
+// need a function that counts the number of sheep present in the array (true means present).
+// For example,
+// [True, True, True, False,
+// True, True, True, True ,
+// True, False, True, False,
+// True, False, False, True ,
+// True, True, True, True ,
+// False, False, True, True]
+// The correct answer would be 17.Hint: Don't forget to check for bad values like null/undefined.
 
-o={'x': [11, 12, 13, 14, 15, 16, 17, 18, 19],
-'y': [21, 22, 23, 24, 25, 26, 27, 28, 29],
-'z': [31, 32, 33, 34, 35, 36, 37, 38, 39]}
-for (i in o){
-    console.log(o[i][4])
-}
+let arr=[true, true, true, false,
+    true, true, true, true ,
+    true, false, true, false,
+    true, false, false, true ,
+    true, true, true, true ,
+    false, false, true, true]
+let true_count=0
+for (let i=0;i<arr.length;i++){
+    if (arr[i]==true){
+        true_count++
+    }
+}console.log(true_count)

@@ -1,6 +1,33 @@
-// Q11.Write a Python script to merge two Python dictionaries
-obj1={"a":1,"b":2,"C":3,"d":4}
-obj2={"p":5,"q":6,"r":7,"s":8}
-for (i in obj2){
-    obj1[i]=obj2[i]
-}console.log(obj1)
+// Q11.Implement a function named generateRange(min, max, step), which takes 
+// three arguments and generates a range of integers from min to max, with 
+// the step. The first integer is the minimum value,the second is the maximum 
+// of the range and the third is the step. (min < max)Task
+// Implement a function named
+// generate_range(2, 10, 2) # should return list of [2,4,6,8,10]
+// generate_range(1, 10, 3) # should return list of [1,4,7,10]
+// generate_range(2, 10, 2) # should return array of [2, 4, 6, 8, 10]
+// generate_range(1, 10, 3) # should return array of [1, 4, 7, 10]
+// Note
+// min < max
+// step > 0
+// the range does not HAVE to include max (depending on the step)
+
+
+
+// function fun() {
+//     let arr=[];
+//     for (let i=2;i<=10;i+=2){
+//         arr.push(i)
+//     }console.log(arr)
+// }
+
+
+function fun() {
+    let arr=[];
+    for (let i=2;i<=10;i+=2){
+        arr.push(i)
+        
+    }
+    return arr
+}
+console.log(fun())

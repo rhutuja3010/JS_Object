@@ -1,36 +1,19 @@
-// Q27.Write a Python program to count the values associated with key in a dictionary.
-// student = [{'id': 1, 'success': true, 'name': 'Lary'},
-// {'id': 2, 'success': false, 'name': 'Rabi'},
-// {'id': 3, 'success': true, 'name': 'Alex'}]
-
-// console.log()
-// for (i of student){
-//     let idsum=0
-//     let success_sum=false
-//     let name_sum=''
-//     // console.log(i)
-//     for (j in i){
-//         idsum+=i[j].id
-//         // console.log(typeof(idsum))
-//         // success_sum+=i.success
-//         // name_sum+=i.name
-//         console.log(i[0])
-        
-// }console.log()
-//     }
-
-
-
-student = [{'id': 1, 'success': true, 'name': 'Lary'},
-{'id': 2, 'success': false, 'name': 'Rabi'},
-{'id': 3, 'success': true, 'name': 'Alex'}]
-// console.log(student[0].id)
-for (i of student){
-    id_sum=student[0].id+student[1].id+student[2].id
-    success_sum=student[0].success+student[1].success+student[2].success
-    name_sum=student[0].name+student[1].name+student[2].name
-}console.log(id_sum)
-console.log(success_sum)
-console.log(name_sum)
-
-
+// Q27. Write a function for checking the speed of drivers. This function should 
+// have one  parameter: speed.
+// 1. If speed is less than 70, it should print “Ok”.
+// 2. Otherwise, for every 5km above the speed limit (70), it should give the 
+// driver one demerit point and print the total number of demerit points. 
+// For example, if the speed is 80, it should print: “Points: 2”.
+// 3. If the driver gets more than 12 points, the function should print: 
+// “License suspended”
+function check_speed(sp){
+if (sp<70){
+    console.log("ok")
+}else if(sp>70){
+    point=(sp-70)/5
+    console.log(point,":Points ")
+    if (point>=12){
+        console.log("License suspended")
+    }
+}
+}check_speed(120)

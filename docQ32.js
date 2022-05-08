@@ -1,18 +1,14 @@
-// Q32.Write a Python program to get the key, value and item in a dictionary.
-// dict_num = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
-// key   value     count
-// 1       10      1
-// 2       20      2
-// 3       30      3
-// 4       40      4
-// 5       50      5
-// 6       60      6
-
-
-obj={1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
-console.log("key",   "value",   "count")
-count=0
-for (i in obj){
-    count+=1
-    console.log(i, "  " ,obj[i], "  ", count)
-}
+// Q32.Complete the function that takes a non-negative integer n as input, and returns a list of
+// all the powers of 2 with the exponent ranging from 0 to n (inclusive).
+// n=0 == >[1] #[2^0]
+// n = 1 ==> [1, 2] # [2^0, 2^1]
+// n = 2 ==> [1, 2, 4] # [2^0, 2^1, 2^2
+// let n=2;
+function power(num){
+    let arr=[]
+    for (let i=0;i<=num;i++){
+        let b=num**i
+        arr.push(b)
+    }console.log(arr)
+    }
+power(2)

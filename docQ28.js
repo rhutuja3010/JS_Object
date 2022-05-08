@@ -1,38 +1,16 @@
-// Q28.Write a Python program to convert a list into a nested dictionary of keys.
-// num_list = [1, 2, 3, 4]
-// Sample output:
-// {1: {2: {3: {4: {}}}}}
-// Q29.Write a Python program to sort a list alphabetically in a dictionary.
-
-// l= [1, 2, 3, 4]
-// var obj={}
-// for (i=l.length-1;i>=0;i--){
-//     obj[l[i]] ={...obj}
-// }
-// console.log(obj)
+// Q28. Write a function called showNumbers that takes a parameter called limit.
+// It should print all the numbers between 0 and limit with a label to identify
+// the even and odd numbers. For
+// example, if the limit is 3, it should print: - 0 even,1 odd, 2 even, 3 odd
 
 
-
-// l= [1, 2, 3, 4]
-// var obj={}
-// for (i in obj){
-//     obj[-i]={...obj}
-// }console.log(obj)
-
-// l= [1, 2, 3, 4]
-// for (i=l.length-1;i>=0;i--){
-//     obj[l[-i]] ={...obj}
-// }
-// console.log(obj)
-
-
-
-
-// var key = "name";
-// var person = {[key]:"John"}; // same as var person = {"name" : "John"}
-// console.log(person); // should print  Object { name="John"}
-
-// let values="rhutu"
-// let obj={"name":values};
-// console.log(obj)
-
+function odd_even(n1,n2){
+    for(let i=n1;i<=n2;i++){
+        if (i%2==0){
+            console.log(i,"even")
+        }else{
+            console.log(i,"odd")
+        }
+    }
+}
+odd_even(1,5)

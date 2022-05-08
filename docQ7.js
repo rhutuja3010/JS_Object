@@ -1,20 +1,20 @@
-// Q7.
-// Write a Python script to concatenate the following dictionaries to create a new one.
-// Sample Dictionary :
-// dic1={1:10, 2:20}
-// dic2={3:30, 4:40}
-// dic3={5:50,6:60}
-// Expected Result : {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+// Q7.Write function bmi that calculates body mass index (bmi = weight / height2).
+// if bmi <= 18.5 return "Underweight"
+// if bmi <= 25.0 return "Normal"
+// if bmi <= 30.0 return "Overweight"
+// if bmi > 30 return "Obese"
 
-
-dic1={1:10, 2:20}
-dic2={3:30, 4:40}
-dic3={5:50,6:60}
-for (i in dic1){
-    dic3[i]=dic1[i]
-    for (i in dic2){
-          
-            dic3[i]=dic2[i]
-        }
-    
-}console.log(dic3)
+function fun(){
+    let n=require("readline-sync")
+    let weight=n.questionInt("enter the weight :")
+    let height=n.questionInt("enter teh height :")
+    let bmi=weight/height*height;
+    if (bmi <= 18.5){
+        return "Underweight"
+    }else if (bmi <= 25.0){
+        return "Normal"
+    }else if(bmi > 30){
+        return "Obese"
+    }
+}
+console.log(fun())

@@ -1,38 +1,11 @@
-// Q2. Write a Python program to create a dictionary from a string.
-// Note: Track the count of the letters from the string.
-// Sample string : 'w3resource'
-// Output: {'w': 1, '3': 1, 'r': 2, 'e': 2, 's': 1, 'o': 1, 'u': 1, 'c': 1}
+// Q2. Write a Python function to find the Max of three numbers.
 
-// let s='w3resource'
-// count={}
-// for(i of s){
-//     if (i in count){
-//         count[i]+=1
-//     }else{
-//         count[i]=1
-//     }
-// }console.log(count)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let s="rhutuja"
-// let count={}
-// for  (i of s){
-//     if (i in count){
-//         count[i]+=1
-//     }else{
-//         count[i]=1
-//     }
-// }console.log(count)
+function max(n1,n2,n3){
+    if (n1>n2 && n1>n3){
+        console.log(n1,"n1 is grater")
+    }else if(n2>n1 && n2>n3){
+        console.log(n2,"n2 is grater")
+    }else{
+        console.log(n3,"n3 is grater")
+    }
+}max(8,9,5)
