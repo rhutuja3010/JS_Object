@@ -15,8 +15,19 @@ students = {'Aex':{'class':'V',
 for (i in students){
     console.log(i)
 for (j in students[i]){
-    console.log(j,students[i][j])
+    // console.log(j,students[i][j])
+    console.log(j)
+    }
     break
+}
 
-}}
+
+
+// for (i in students){
+//     console.log(i)
+// for (j in students[i]){
+//     console.log(j,students[i][j])
+//     }
+//     break
+// }
     

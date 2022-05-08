@@ -10,5 +10,6 @@ myDict= {
 for (i in myDict){
     if (typeof[i]==='object'){
         delete myDict[i]['A']
+        // delete myDict.A
     }
 }console.log(myDict)

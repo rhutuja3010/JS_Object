@@ -1,21 +1,17 @@
-// Q48. Two numbers are entered through the keyboard. Write a flowchart to find the value of the
-// raised to the power of another.
-// Sample Input
-// 3
-// 4
-// Sample Output
-// 81 (3x3x3x3)
+// Q48.Write a Python program to find the length of a given dictionary values.
+// Original Dictionary:
+// {1: 'red', 2: 'green', 3: 'black', 4: 'white', 5: 'black'}
+// Length of dictionary values:
+// {'red': 3, 'green': 5, 'black': 5, 'white': 5}
+// Original Dictionary:
 
-let n1=3
-let n2=3
-let s='';
-for (let i=1;i<=n2;i++){
-    if(i==n2){
-        s+=n2
-    }else{
-        s+=n2
-        s+="*"
-    }
-    n=(n1**n2)
+obj={1: 'red', 2: 'green', 3: 'black', 4: 'white', 5: 'black'}
+let o={}
+for (i in obj){
+    o[obj[i]]=obj[i].length
 }
-console.log(n,s)
+console.log(o)
+
+
+
+

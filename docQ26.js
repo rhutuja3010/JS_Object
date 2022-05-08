@@ -10,6 +10,17 @@
 
 obj={'C1':[1,2,3],'C2':[5,6,7],'C3':[9,10,11]}
 a=[]
-for(i of obj){
-    console
+s=''
+for(i in obj){
+    s+=i
+    s+=" "
+}
+// console.log(s)
+s1=''
+for (i in obj){
+    // console.log(obj[i])
+    // for(let j=1;j<=i.length;i++){
+        // s1+=obj[i]
+    // }
+    console.log(obj[i])
 }

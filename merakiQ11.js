@@ -1,21 +1,38 @@
-const list1=[]
+
 const word="MISSISSIPPI"
 let output={}
 for (i of word){
-    if (list1.includes(i)){
-        output[i]=output[i]+1
+    if (i in output){
+        output[i]+=1
 }else{
-    list1.push(i)
     output[i]=1
 }
-}console.log(output)
+}
+console.log(output)
+
+
+// let s='w3resource'
+// let count={};
+// for (i of s){
+//     if (i in count){
+//         count[i]+=1 
+//     }else{
+//         count[i]=1
+//     }
+// }console.log(count)
+
+
+
+
+
 
 
 // let a=[4,2,6,9,8,1]
 // for (i of a){
 //     let l=a.length
-// console.log(l) 
-// break}
+// console.log(l)
+// break 
+// }
 
 
 

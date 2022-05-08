@@ -1,14 +1,7 @@
-// Q14.Write a function to check if a number is prime or not.
-function prime(n){
-    let count=0;
-    let i=0;
-    while (i<=n){
-        if (n%i==0){
-            count++
-        }i++
-    }if (count==2){
-        console.log("prime")
-    }else{
-        console.log("no")
-    }
-}prime(12)
+// Q14.Write a Python program to multiply all the items in a dictionary
+
+obj1={"a":1,"b":2,"c":3,"d":4}
+let mult=1
+for (i in obj1){
+    mult*=obj1[i]
+}console.log(mult)

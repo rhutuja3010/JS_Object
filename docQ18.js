@@ -1,10 +1,17 @@
-// Q17. Write a function to tell user if he/she is able to vote or not.( Consider minimum age of voting
-//     to be 18. )
+// Q18.Write a Python program to get the maximum and minimum value in a dictionary.
 
-function vote(age){
-    if (age>=18){
-        console.log("able to votting")
-    }else{
-        console.log("not able to votting")
+obj1={"a":8,"b":2,"c":3,"d":6}
+max=0
+min=obj1[0]
+for (i in obj1){
+    if (obj1[i]>max){
+        max=obj1[i]
     }
-}vote(20)
+}
+for(i in obj1){
+    if(obj1[i]<min){
+        min=obj1[i]
+    }
+}
+
+console.log(min)

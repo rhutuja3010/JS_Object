@@ -1,14 +1,19 @@
-// Q6.Write a Python program to print the even numbers from a given list.
-// Sample List : [1, 2, 3, 4, 5, 6, 7, 8, 9]
-// Expected Result : [2, 4, 6, 8].
+// Q6.
+// Write a Python script to add a key to a dictionary.
+// Sample Dictionary : {0: 10, 1: 20}
+// Expected Result : {0: 10, 1: 20, 2: 30}
 
-function even(arr){
-    let a_even=[];
-    for (i of arr){
-        if (i%2==0){
-            a_even.push(i)
-        }
-    }console.log(a_even)
+let o={0: 10, 1: 20}
+o[2]=30
+console.log(o)
 
-}
-even([1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+
+
+
+
+
+
+
+
+

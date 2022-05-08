@@ -1,24 +1,30 @@
-// Q3.Write a Python function to sum all the numbers in a list.
-// Sample List : (8, 2, 3, 0, 7)
-// Output : 20.
-
-function sum(a){
-    sum=0
-    for (i of a){
-        sum+=i
-    }
-    console.log(sum)
-}
-sum([8, 2, 3, 0, 7])
+// Q3. Write a Python script to generate and print a dictionary that contains a number (between 1
+//     and n) in the form (x, x*x).
+//     Sample input ( n = 5) :
+//     Output : {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}.
 
 
-// function sumfun(a1){
-//     sum=0
-//     for (i=0;i<a1.length;i++){
-//         sum+=a1[i]
-//         // console.log(sum)
-//         // a1=[8, 2, 3, 0, 7]
-//     }
-//     console.log(sum)
-//     // a=[8, 2, 3, 0, 7]
-// }console.log(sumfun([[8, 2, 3, 0, 7]]))
+let obj={};
+let n=5;
+for (let i=1;i<=n;i++){
+    obj[i]=i**2
+}console.log(obj)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let n=5
+// o={}
+// for (let i=1;i<=n;i++){
+//     o[i]=i**2
+// }console.log(o)

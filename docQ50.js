@@ -1,13 +1,46 @@
-// Q50. Make a split function
-// Input :-[“i am anjali”]
-// Output :- [‘i’,’am’,’anjali’]
+// Q50.Write a Python program to convert a given dictionary into a list of lists.
+// Original Dictionary:
+// {1: 'red', 2: 'green', 3: 'black', 4: 'white', 5: 'black'}
+// Convert the said dictionary into a list of lists:
+// [[1, 'red'], [2, 'green'], [3, 'black'], [4, 'white'], [5, 'black']]
+// Original Dictionary:
+// {'1': 'Austin Little', '2': 'Natasha Howard', '3': 'Alfred Mullins', '4': 'Jamie Rowe'}
+// Convert the said dictionary into a list of lists:
+// [['1', 'Austin Little'], ['2', 'Natasha Howard'], ['3', 'Alfred Mullins'], ['4', 'Jamie Rowe']]
 
 
-s="i am anjali"
-a=s.split(" ")
-console.log(a)
+obj={1: 'red', 2: 'green', 3: 'black', 4: 'white', 5: 'black'}
+var outer_arr=[];
+for (i in obj){
+    inner_arr=[]
+    inner_arr.push(i,obj[i])
+    outer_arr.push(inner_arr)
+}
+console.log(outer_arr)
 
 
-// let text = "How are you doing today?";
-// const myArray = text.split(" ");
-// console.log(myArray)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// obj={1: 'red', 2: 'green', 3: 'black', 4: 'white', 5: 'black'}
+// a=[]
+// for (i in obj){
+//     a2=[]
+//     a2.push(obj[i].length)
+//     a2.push(obj[i])
+//     a.push(a2)
+    
+// }
+// console.log(a)

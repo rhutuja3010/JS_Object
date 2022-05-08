@@ -4,6 +4,7 @@
 //     "c":3
 // }
 // console.log(o["a"])
+// console.log(o.a)
 // o.a="9"
 // console.log(o)
 // o["a"]=8
@@ -18,14 +19,9 @@ var myHome = {
     "neighbours": ["everything!"]
   };
 
-
-
-
-
- 
- 
-//  myHome.isGood= true;
+// myHome.isGood= true;
 // delete myHome.Colour
+// console.log(myHome)
 // console.log(myHome.hasOwnProperty("name"))
  
 //  console.log(myHome);

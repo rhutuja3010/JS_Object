@@ -1,16 +1,20 @@
-// Q42. Find the sum of number digits in List.
-// The original list is :
-// List Integer Summation : [3, 13, 17, 7]Explanation: 1+2 = 3, 6+7=13, 9+8=17, 
-// 3+4=7
-// The original list is : [15, 81, 11, 234]
+// Q42.
+// Write a Python program to check all values are same in a dictionary. Go to the editor
+// Original Dictionary:
+// {'Cierra Vega': 12, 'Alden Cantrell': 12, 'Kierra Gentry': 12, 'Pierre Cox': 12}
+// Check all are 12 in the dictionary.
+// True
+// Check all are 10 in the dictionary.
+// False
 
-let arr=[12, 67, 98, 34];
-let a=[];
-for (let i=0;i<arr.length;i++){
-    let sum=0;
-    let s=String(arr[i])
-    for (let j=0;j<s.length;j++){
-        let int=Number(s[j])
-        sum+=int
-    }a.push(sum)
-}console.log(a)
+
+obj={'Cierra Vega': 12, 'Alden Cantrell': 12, 'Kierra Gentry': 12, 'Pierre Cox': 12}
+for (i in obj){
+    if(obj[i]===12){
+        console.log("True")
+        // break
+    }else {
+        console.log("False")
+        // break
+    }
+}

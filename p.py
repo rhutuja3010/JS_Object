@@ -205,11 +205,68 @@
 #         print()
 #         i+=1
 
-i=1
-while i<=5:
-        j=1
-        while j<=5:
-                print(j,end=" ")
-                j+=1
-                print()
-        i+=1
+# i=1
+# while i<=5:
+#         j=1
+#         while j<=5:
+#                 print(j,end=" ")
+#                 j+=1
+#                 print()
+#         i+=1
+
+
+# a=[[[[[[5,6,7,8,9,10,25],3,2]]]]]
+# print(a[0])
+# print(a[0][0])
+# print(a[0][0][0][0][0])
+# print(a[0][0][0][0][2])
+
+
+# b=[[1,2,3]]
+# print(b[0])
+
+
+
+# c=[7,[8,9,5,4,3,2,1],[6,1,2,3]]
+# print(c[0])
+# print(c[1][0])
+
+
+
+# a=[7,5,[7,6,[5,4,["a","b","c",["d","f"],["b","a"],5,7,8],4,3],2],3,2,[1,2,3]]
+# # print(a[2])
+# print(a[2][2][2])
+
+
+# a=5+1j
+# b=6+2j
+# print(a*b)
+# original_list= [{'id': 1, 'success': 5, 'name': 1},
+# {'id': 2, 'success': 5, 'name': 1},
+# {'id': 3, 'success': 5, 'name': 1}]
+# result = {}
+# for elm in original_list:
+#     for k, v in elm.items():
+
+#         # Initialise it if it doesn't exist
+#         if k not in result:
+#             result[k] = 0
+
+#         # accumulate sum seperately
+#         result[k] += v
+
+# print(result)
+
+
+# student = [{'id': 1, 'success': True, 'name': 'Lary'},
+# {'id': 2, 'success': False, 'name': 'Rabi'},
+# {'id': 3, 'success': True, 'name': 'Alex'}]
+# id_sum=0
+# success_sum=False
+# name_sum =''
+# for i in student:
+#     if 'id' in i:
+#         id_sum+=1
+#     print(id_sum)
+
+
